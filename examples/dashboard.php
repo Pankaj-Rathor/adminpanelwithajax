@@ -1,3 +1,10 @@
+<?php
+session_start();
+  if(!isset($_SESSION['uid'])){
+    header('Location:../index.php');
+    exit();
+  }
+?>
 <!--
 =========================================================
 Material Dashboard - v2.1.2
@@ -11,7 +18,6 @@ Coded by Creative Tim
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <body class="" >
   <div class="wrapper " style="position: absolute; top: 30px; left:20%;">
-      <div class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -76,7 +82,7 @@ The above copyright notice and this permission notice shall be included in all c
                     <img src="img/admin.jpg" width="85" height="80" style="margin-top: 2px">
                   </div>
                   <p class="card-category">Admin</p>
-                  <i class="card-title" style="font-size: 16px; font-weight: bold;"><?php session_start(); echo $_SESSION['name']?></i><i class="fa fa-check-square-o" style="color: skyblue; font-size: 16px;"></i>
+                  <i class="card-title" style="font-size: 16px; font-weight: bold;"><?php echo $_SESSION['name']?></i><i class="fa fa-check-square-o" style="color: skyblue; font-size: 16px;"></i>
                 </div>
                 <div class="card-footer" style="margin-top: -1px;">
                   <div class="stats" onclick="location.reload()">
@@ -139,7 +145,6 @@ The above copyright notice and this permission notice shall be included in all c
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 

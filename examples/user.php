@@ -1,5 +1,10 @@
 <?php
 session_start();
+  if(!isset($_SESSION['uid'])){
+    header('Location:../index.php');
+    exit();
+  }
+
 require_once '../config/connection.php';
 $id=$name=$email=$age=$phone=$gender="";
 if(isset($_GET['id'])){
@@ -33,7 +38,7 @@ The above copyright notice and this permission notice shall be included in all c
   <div class="wrapper ">
     <div class="main-panel">
       <div class="content">
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-top:-65px;">
           <div class="row" style="display: flex ;justify-content: center;">
             <div class="col-md-8">
               <div class="card">

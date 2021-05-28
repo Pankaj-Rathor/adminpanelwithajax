@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['name'])){
+if(!isset($_SESSION['uid'])){
   header('Location:../index.php');
 }
 
@@ -23,7 +23,7 @@ The above copyright notice and this permission notice shall be included in all c
   <div class="wrapper ">
    <div class="main-panel">
      <div class="content">
-      <div class="container-fluid">
+      <div class="container-fluid" style="margin-top:-60px;">
         <div class="row">
           <div class="col-md-12">
             <div class="card">
