@@ -26,7 +26,7 @@
                                 Account
                             </p>
                         </a>
-                        <div id="opt" class="dropdown-menu dropdown-menu-right">
+                        <div id="opt" class="dropdown-menu dropdown-menu-right" style="margin-top:10px;">
                             <a class="dropdown-item" id="profile" data-id="<?php echo $_SESSION['uid'];?>">Profile</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="../config/logout.php">Log out</a>
