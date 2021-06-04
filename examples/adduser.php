@@ -1,17 +1,6 @@
 <?php
 require_once '../config/connection.php';
 
-function test_input($data){
-	$data = trim($data);
-	$data = htmlspecialchars($data);
-	$data = stripslashes($data);
-	if(empty($data)){
-		echo "require";
-		exit();
-	}
-	return $data;
-}
-
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 	$name = test_input($_POST['name']);

@@ -24,7 +24,7 @@ The above copyright notice and this permission notice shall be included in all c
               <div class="card card-stats">
                 <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
-                    <i class="fa fa-heart" style="color: hsla(0,100%,60%,0.8);"></i>
+                    <i class="fa fa-heartbeat"></i>
                   </div>
                   <p class="card-category">Users</p>
                   <?php 
@@ -45,10 +45,10 @@ The above copyright notice and this permission notice shall be included in all c
               <div class="card card-stats">
                 <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-server"></i>
                   </div>
-                  <p class="card-category">Followers</p>
-                  <h3 class="card-title">+245</h3>
+                  <p class="card-category">Categories</p>
+                  <h3 class="card-title"><?php echo getCategoryCount();?></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
@@ -62,10 +62,10 @@ The above copyright notice and this permission notice shall be included in all c
               <div class="card card-stats">
                 <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-cart-arrow-down"></i>
                   </div>
-                  <p class="card-category">Followers</p>
-                  <h3 class="card-title">+245</h3>
+                  <p class="card-category">Products</p>
+                  <h3 class="card-title"><?php echo getProductCount();?></h3>
                 </div>
                 <div class="card-footer">
                   <div class="stats">
