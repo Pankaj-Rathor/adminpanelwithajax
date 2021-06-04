@@ -4,7 +4,7 @@
 
         Tip 2: you can also add an image using data-image tag
       -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+      <div class="logo"><a href="<?php echo $_SERVER['PHP_SELF']?>" class="simple-text logo-normal">
         Admin Panel
       </a></div>
       <div id="sidebar" class="sidebar-wrapper">
@@ -18,13 +18,25 @@
           <li id="userlist" class="nav-item">
             <a class="nav-link" href="">
               <i class="material-icons">content_paste</i>
-              <p>User List</p>
+              <p>User Management</p>
             </a>
           </li>
-          <li id="addnewuser" class="nav-item ">
+         <!--  <li id="addnewuser" class="nav-item ">
             <a class="nav-link" href="">
               <i class="material-icons">content_paste</i>
               <p>Add New User</p>
+            </a>
+          </li> -->
+           <li id="product" class="nav-item">
+            <a class="nav-link" href="">
+              <i class="material-icons">content_paste</i>
+              <p>Product Management</p>
+            </a>
+          </li>
+          <li id="categories" class="nav-item ">
+            <a class="nav-link" href="">
+              <i class="material-icons">content_paste</i>
+              <p>Categories Mangement</p>
             </a>
           </li>
         </ul>
