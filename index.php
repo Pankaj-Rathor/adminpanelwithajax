@@ -1,14 +1,14 @@
 <?php
 session_start();
 if(isset($_SESSION['name'])){
-  header('Location:examples/dashboard.html');
+  header('Location:examples/admin_panel.php');
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Login</title>
-  <?php require_once 'component/links.php';?>
+  <?php require 'component/links.php';?>
 
   <style type="text/css">
     body{
@@ -31,7 +31,7 @@ if(isset($_SESSION['name'])){
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" autocomplete required>
+            <input id="password" type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password" autocomplete required>
           </div>
           <div class="form-group">
             <a href="forgetPassword.php" class="badge badge-danger p-2">Forget Password</a>
